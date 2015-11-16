@@ -1,0 +1,59 @@
+{
+  "name": "simple-tcp",
+  "version": "0.0.1",
+  "description": "a very simple tcp server build with frp-middleware",
+  "main": "lib/simple-tcp.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "prepublish": "gulp build",
+    "postpublish": "gulp tag"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doodzik/simple-tcp.git"
+  },
+  "keywords": [
+    "middelware",
+    "frp",
+    "functional",
+    "reactive",
+    "programming",
+    "stream",
+    "streams",
+    "EventStream",
+    "tcp",
+    "simple"
+  ],
+  "author": {
+    "name": "Frederik Dudzik",
+    "url": "http://dudzik.co"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/doodzik/simple-tcp/issues"
+  },
+  "homepage": "https://github.com/doodzik/simple-tcp#readme",
+  "devDependencies": {
+    "babel-core": "^6.1.4",
+    "babel-plugin-syntax-export-extensions": "^6.1.18",
+    "babel-preset-es2015": "^6.1.4",
+    "del": "^2.1.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "frp-middleware": "^0.0.4",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "syntax-export-extensions"
+    ]
+  }
+}
