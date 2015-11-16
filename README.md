@@ -1,5 +1,5 @@
-# simple-tcp
-[![Build Status](https://travis-ci.org/doodzik/simple-tcp.svg?branch=master)](https://travis-ci.org/doodzik/simple-tcp)
+# plain-tcp
+[![Build Status](https://travis-ci.org/doodzik/plain-tcp.svg?branch=master)](https://travis-ci.org/doodzik/plain-tcp)
 
 A very simple tcp server and client build with frp-middleware
 
@@ -8,13 +8,13 @@ Check out the full API over at the [frp-middleware](http://github.com/doodzik/fr
 # Installation
 
 ```bash
-$ npm install simple-tcp --save
+$ npm install plain-tcp --save
 ```
 # Usage
 
 ```javascript
 import assert             from 'assert'
-import { Server, Client } from 'simple-tcp'
+import { Server, Client } from 'plain-tcp'
 
 let server = new Server(5442)
 server

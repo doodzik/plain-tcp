@@ -1,0 +1,1 @@
+{"version":3,"sources":["simpleTcp.js"],"names":[],"mappings":";;;;;;;;;;;mBAAS,OAAO;;;;;;;;;mBACP,OAAO","file":"simpleTcp.js","sourcesContent":["export { default as Server } from './simpleTcp/server'\nexport { default as Client } from './simpleTcp/client'\n"],"sourceRoot":"/source/"}
