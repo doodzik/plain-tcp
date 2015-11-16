@@ -16,7 +16,6 @@ class Server extends Middleware {
   callback(middleware) {
     return socket => {
       socket.on('error', console.error)
-      socket.on('close', () => console.log('Connection closed'))
       socket.on('data',  data => {
         const message = middleware(data.toString())
         if(typeof(message) !== 'undefined' || message !== null)
